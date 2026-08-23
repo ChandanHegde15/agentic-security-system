@@ -1,0 +1,8 @@
+{
+  "name": "p005-test",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^5.0.0",
+    "axios": "^1.8.0"
+  }
+}

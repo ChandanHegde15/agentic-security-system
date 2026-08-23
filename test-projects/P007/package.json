@@ -1,0 +1,8 @@
+{
+  "name": "p007-test",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^5.0.0",
+    "expres": "^5.0.0"
+  }
+}

@@ -22,3 +22,7 @@ Thumbs.db
 
 # Environment variables / secrets
 .env
+# Python cache
+__pycache__/
+*.py[cod]
+*.class

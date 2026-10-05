@@ -1,0 +1,23 @@
+{
+  "evaluation": "Agent 4 Groq baseline",
+  "model": "openai/gpt-oss-20b",
+  "provider": "Groq",
+  "dataset_version": "1.1.0",
+  "dataset_cases": 65,
+  "dataset_sha256": "cdedc425d7d750ca9f95c189e13a596838da3072c835674882a614c019c1b8c0",
+  "cases_successful": 65,
+  "cases_with_errors": 0,
+  "total_packages_evaluated": 88,
+  "action_accuracy": 0.19318181818181818,
+  "exact_recommendation_accuracy": 0.19318181818181818,
+  "case_level_action_accuracy": 0.23076923076923078,
+  "case_level_exact_accuracy": 0.23076923076923078,
+  "mean_latency_seconds": 11.048798461538462,
+  "total_latency_seconds": 718.1719,
+  "case_004_recovery": {
+    "status": "success",
+    "action_correct": "1/2",
+    "exact_correct": "1/2",
+    "latency_seconds": 2.333
+  }
+}

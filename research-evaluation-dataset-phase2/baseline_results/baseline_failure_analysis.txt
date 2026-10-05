@@ -1,0 +1,329 @@
+==========================================================================================
+AGENT 4 GROQ BASELINE - COMPLETE FAILURE ANALYSIS
+==========================================================================================
+
+BASELINE OVERVIEW
+------------------------------------------------------------------------------------------
+Total cases                 : 65
+Successful executions       : 65
+Execution errors            : 0
+Packages evaluated          : 88
+Action correct              : 17
+Action accuracy             : 19.3182%
+Exact correct               : 17
+Exact accuracy              : 19.3182%
+Fully correct cases         : 15/65
+Case-level action accuracy  : 23.0769%
+Case-level exact accuracy   : 23.0769%
+Mean latency                : 11.0488s
+Minimum latency             : 1.4268s
+Maximum latency             : 23.4120s
+Total latency               : 718.1719s
+
+==========================================================================================
+CASE-LEVEL RESULTS
+==========================================================================================
+CASE-001 | dependency_extraction | multi_dependency_verified | 0/4 | FAIL
+CASE-002 | dependency_extraction | version_constraints | 0/4 | FAIL
+CASE-003 | risk_analysis | not_found_without_similarity | 0/3 | FAIL
+CASE-005 | dependency_extraction | node_runtime_dependencies | 0/2 | FAIL
+CASE-006 | risk_analysis | node_not_found_without_similarity | 0/2 | FAIL
+CASE-007 | risk_analysis | node_moderate_similarity | 1/2 | FAIL
+CASE-008 | dependency_extraction | mixed_ecosystem | 0/5 | FAIL
+CASE-009 | registry_verification | single_verified_package | 0/1 | FAIL
+CASE-010 | risk_analysis | pypi_moderate_similarity | 1/1 | PASS
+CASE-011 | risk_analysis | pypi_moderate_similarity | 1/1 | PASS
+CASE-012 | risk_analysis | pypi_moderate_similarity | 1/1 | PASS
+CASE-013 | risk_analysis | pypi_moderate_similarity | 1/1 | PASS
+CASE-014 | risk_analysis | npm_moderate_similarity | 1/1 | PASS
+CASE-015 | risk_analysis | npm_moderate_similarity | 1/1 | PASS
+CASE-016 | risk_analysis | strong_similarity_exact_name_not_found | 0/1 | FAIL
+CASE-017 | risk_analysis | strong_similarity_custom_catalogue | 0/1 | FAIL
+CASE-018 | risk_analysis | strong_similarity_custom_catalogue | 0/1 | FAIL
+CASE-019 | risk_analysis | moderate_similarity_custom_catalogue | 0/1 | FAIL
+CASE-020 | registry_verification | pypi_registry_error | 0/1 | FAIL
+CASE-021 | registry_verification | npm_registry_error | 0/1 | FAIL
+CASE-022 | registry_verification | unsupported_ecosystem_handling | 0/1 | FAIL
+CASE-023 | risk_analysis | not_found_action_investigate | 1/1 | PASS
+CASE-024 | dependency_extraction | compound_version_constraints | 0/1 | FAIL
+CASE-025 | pipeline_integration | mixed_status_project | 1/3 | FAIL
+CASE-026 | pipeline_integration | mixed_verified_and_registry_error | 0/2 | FAIL
+CASE-027 | pipeline_integration | mixed_npm_project | 0/3 | FAIL
+CASE-028 | dependency_extraction | empty_manifest | 0/0 | PASS
+CASE-029 | dependency_extraction | duplicate_declarations | 0/2 | FAIL
+CASE-030 | dependency_extraction | tilde_version_constraint | 0/1 | FAIL
+CASE-031 | dependency_extraction | npm_version_syntax | 0/2 | FAIL
+CASE-032 | risk_analysis | not_found_action_monitor | 0/1 | FAIL
+CASE-033 | candidate_remediation | remediation_success | 1/1 | PASS
+CASE-034 | candidate_remediation | remediation_test_failure | 1/1 | PASS
+CASE-035 | candidate_remediation | remediation_no_tests | 1/1 | PASS
+CASE-036 | candidate_remediation | remediation_install_failure | 1/1 | PASS
+CASE-037 | candidate_remediation | remediation_unsupported_ecosystem | 0/1 | FAIL
+CASE-038 | candidate_remediation | remediation_non_replacement_no_action | 0/1 | FAIL
+CASE-039 | candidate_remediation | remediation_non_replacement_monitor | 0/1 | FAIL
+CASE-040 | candidate_remediation | remediation_non_replacement_investigate | 1/1 | PASS
+CASE-041 | candidate_remediation | remediation_branch_collision | 1/1 | PASS
+CASE-042 | candidate_remediation | remediation_unexpected_modifications | 1/1 | PASS
+CASE-043 | negative_agent_4 | unsupported_evidence_cve | 0/1 | FAIL
+CASE-044 | negative_agent_4 | unsupported_evidence_malware | 0/1 | FAIL
+CASE-045 | negative_agent_4 | fake_replacement_package | 0/1 | FAIL
+CASE-046 | negative_agent_4 | unsupported_replacement_package | 0/1 | FAIL
+CASE-047 | negative_agent_4 | replace_without_suggested_package | 0/1 | FAIL
+CASE-048 | negative_agent_5 | replace_without_name_similarity | 0/1 | FAIL
+CASE-049 | negative_agent_5 | suggested_package_on_investigate | 0/1 | FAIL
+CASE-050 | negative_agent_5 | suggested_package_on_no_action | 0/1 | FAIL
+CASE-051 | negative_agent_4 | invented_version_on_replace | 0/1 | FAIL
+CASE-052 | negative_agent_4 | invented_version_on_no_action | 0/1 | FAIL
+CASE-053 | negative_agent_5 | unknown_risk_not_conditional | 0/1 | FAIL
+CASE-054 | negative_agent_4 | unknown_risk_disallowed_action_replace | 0/1 | FAIL
+CASE-055 | negative_agent_5 | unknown_risk_disallowed_action_no_action | 0/1 | FAIL
+CASE-056 | negative_agent_5 | ungrounded_reasoning_malware | 0/1 | FAIL
+CASE-057 | negative_agent_5 | ungrounded_reasoning_typosquatting | 0/1 | FAIL
+CASE-058 | negative_agent_5 | ungrounded_reasoning_compromised | 0/1 | FAIL
+CASE-059 | negative_agent_5 | contradictory_reasoning_exists | 0/1 | FAIL
+CASE-060 | negative_agent_4 | project_id_mismatch | 0/1 | FAIL
+CASE-061 | negative_agent_5 | coverage_mismatch_missing_dependency | 0/2 | FAIL
+CASE-062 | negative_agent_4 | coverage_mismatch_extraneous_package | 0/1 | FAIL
+CASE-063 | negative_agent_5 | duplicate_recommendations | 0/1 | FAIL
+CASE-064 | negative_agent_4 | disallowed_action_enum | 0/1 | FAIL
+CASE-065 | negative_agent_4 | invalid_confidence_score | 0/1 | FAIL
+CASE-004 | risk_analysis | not_found_below_similarity_threshold | 1/2 | FAIL
+
+==========================================================================================
+FAILED CASES: 50
+==========================================================================================
+CASE-001 | dependency_extraction | multi_dependency_verified | action=0/4 | exact=0/4
+CASE-002 | dependency_extraction | version_constraints | action=0/4 | exact=0/4
+CASE-003 | risk_analysis | not_found_without_similarity | action=0/3 | exact=0/3
+CASE-005 | dependency_extraction | node_runtime_dependencies | action=0/2 | exact=0/2
+CASE-006 | risk_analysis | node_not_found_without_similarity | action=0/2 | exact=0/2
+CASE-007 | risk_analysis | node_moderate_similarity | action=1/2 | exact=1/2
+CASE-008 | dependency_extraction | mixed_ecosystem | action=0/5 | exact=0/5
+CASE-009 | registry_verification | single_verified_package | action=0/1 | exact=0/1
+CASE-016 | risk_analysis | strong_similarity_exact_name_not_found | action=0/1 | exact=0/1
+CASE-017 | risk_analysis | strong_similarity_custom_catalogue | action=0/1 | exact=0/1
+CASE-018 | risk_analysis | strong_similarity_custom_catalogue | action=0/1 | exact=0/1
+CASE-019 | risk_analysis | moderate_similarity_custom_catalogue | action=0/1 | exact=0/1
+CASE-020 | registry_verification | pypi_registry_error | action=0/1 | exact=0/1
+CASE-021 | registry_verification | npm_registry_error | action=0/1 | exact=0/1
+CASE-022 | registry_verification | unsupported_ecosystem_handling | action=0/1 | exact=0/1
+CASE-024 | dependency_extraction | compound_version_constraints | action=0/1 | exact=0/1
+CASE-025 | pipeline_integration | mixed_status_project | action=1/3 | exact=1/3
+CASE-026 | pipeline_integration | mixed_verified_and_registry_error | action=0/2 | exact=0/2
+CASE-027 | pipeline_integration | mixed_npm_project | action=0/3 | exact=0/3
+CASE-029 | dependency_extraction | duplicate_declarations | action=0/2 | exact=0/2
+CASE-030 | dependency_extraction | tilde_version_constraint | action=0/1 | exact=0/1
+CASE-031 | dependency_extraction | npm_version_syntax | action=0/2 | exact=0/2
+CASE-032 | risk_analysis | not_found_action_monitor | action=0/1 | exact=0/1
+CASE-037 | candidate_remediation | remediation_unsupported_ecosystem | action=0/1 | exact=0/1
+CASE-038 | candidate_remediation | remediation_non_replacement_no_action | action=0/1 | exact=0/1
+CASE-039 | candidate_remediation | remediation_non_replacement_monitor | action=0/1 | exact=0/1
+CASE-043 | negative_agent_4 | unsupported_evidence_cve | action=0/1 | exact=0/1
+CASE-044 | negative_agent_4 | unsupported_evidence_malware | action=0/1 | exact=0/1
+CASE-045 | negative_agent_4 | fake_replacement_package | action=0/1 | exact=0/1
+CASE-046 | negative_agent_4 | unsupported_replacement_package | action=0/1 | exact=0/1
+CASE-047 | negative_agent_4 | replace_without_suggested_package | action=0/1 | exact=0/1
+CASE-048 | negative_agent_5 | replace_without_name_similarity | action=0/1 | exact=0/1
+CASE-049 | negative_agent_5 | suggested_package_on_investigate | action=0/1 | exact=0/1
+CASE-050 | negative_agent_5 | suggested_package_on_no_action | action=0/1 | exact=0/1
+CASE-051 | negative_agent_4 | invented_version_on_replace | action=0/1 | exact=0/1
+CASE-052 | negative_agent_4 | invented_version_on_no_action | action=0/1 | exact=0/1
+CASE-053 | negative_agent_5 | unknown_risk_not_conditional | action=0/1 | exact=0/1
+CASE-054 | negative_agent_4 | unknown_risk_disallowed_action_replace | action=0/1 | exact=0/1
+CASE-055 | negative_agent_5 | unknown_risk_disallowed_action_no_action | action=0/1 | exact=0/1
+CASE-056 | negative_agent_5 | ungrounded_reasoning_malware | action=0/1 | exact=0/1
+CASE-057 | negative_agent_5 | ungrounded_reasoning_typosquatting | action=0/1 | exact=0/1
+CASE-058 | negative_agent_5 | ungrounded_reasoning_compromised | action=0/1 | exact=0/1
+CASE-059 | negative_agent_5 | contradictory_reasoning_exists | action=0/1 | exact=0/1
+CASE-060 | negative_agent_4 | project_id_mismatch | action=0/1 | exact=0/1
+CASE-061 | negative_agent_5 | coverage_mismatch_missing_dependency | action=0/2 | exact=0/2
+CASE-062 | negative_agent_4 | coverage_mismatch_extraneous_package | action=0/1 | exact=0/1
+CASE-063 | negative_agent_5 | duplicate_recommendations | action=0/1 | exact=0/1
+CASE-064 | negative_agent_4 | disallowed_action_enum | action=0/1 | exact=0/1
+CASE-065 | negative_agent_4 | invalid_confidence_score | action=0/1 | exact=0/1
+CASE-004 | risk_analysis | not_found_below_similarity_threshold | action=1/2 | exact=1/2
+
+==========================================================================================
+FAILURES BY CATEGORY
+==========================================================================================
+dependency_extraction: cases=9, failed_cases=8, packages=21, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis: cases=16, failed_cases=9, packages=21, action_accuracy=42.8571%, exact_accuracy=42.8571%
+registry_verification: cases=4, failed_cases=4, packages=4, action_accuracy=0.0000%, exact_accuracy=0.0000%
+pipeline_integration: cases=3, failed_cases=3, packages=8, action_accuracy=12.5000%, exact_accuracy=12.5000%
+candidate_remediation: cases=10, failed_cases=3, packages=10, action_accuracy=70.0000%, exact_accuracy=70.0000%
+negative_agent_4: cases=12, failed_cases=12, packages=12, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5: cases=11, failed_cases=11, packages=12, action_accuracy=0.0000%, exact_accuracy=0.0000%
+
+==========================================================================================
+FAILURES BY SUBCATEGORY
+==========================================================================================
+dependency_extraction/multi_dependency_verified: cases=1, failed_cases=1, packages=4, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/version_constraints: cases=1, failed_cases=1, packages=4, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/not_found_without_similarity: cases=1, failed_cases=1, packages=3, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/node_runtime_dependencies: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/node_not_found_without_similarity: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/node_moderate_similarity: cases=1, failed_cases=1, packages=2, action_accuracy=50.0000%, exact_accuracy=50.0000%
+dependency_extraction/mixed_ecosystem: cases=1, failed_cases=1, packages=5, action_accuracy=0.0000%, exact_accuracy=0.0000%
+registry_verification/single_verified_package: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/pypi_moderate_similarity: cases=4, failed_cases=0, packages=4, action_accuracy=100.0000%, exact_accuracy=100.0000%
+risk_analysis/npm_moderate_similarity: cases=2, failed_cases=0, packages=2, action_accuracy=100.0000%, exact_accuracy=100.0000%
+risk_analysis/strong_similarity_exact_name_not_found: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/strong_similarity_custom_catalogue: cases=2, failed_cases=2, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/moderate_similarity_custom_catalogue: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+registry_verification/pypi_registry_error: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+registry_verification/npm_registry_error: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+registry_verification/unsupported_ecosystem_handling: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/not_found_action_investigate: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+dependency_extraction/compound_version_constraints: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+pipeline_integration/mixed_status_project: cases=1, failed_cases=1, packages=3, action_accuracy=33.3333%, exact_accuracy=33.3333%
+pipeline_integration/mixed_verified_and_registry_error: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+pipeline_integration/mixed_npm_project: cases=1, failed_cases=1, packages=3, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/empty_manifest: cases=1, failed_cases=0, packages=0, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/duplicate_declarations: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/tilde_version_constraint: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+dependency_extraction/npm_version_syntax: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/not_found_action_monitor: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+candidate_remediation/remediation_success: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_test_failure: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_no_tests: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_install_failure: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_unsupported_ecosystem: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+candidate_remediation/remediation_non_replacement_no_action: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+candidate_remediation/remediation_non_replacement_monitor: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+candidate_remediation/remediation_non_replacement_investigate: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_branch_collision: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+candidate_remediation/remediation_unexpected_modifications: cases=1, failed_cases=0, packages=1, action_accuracy=100.0000%, exact_accuracy=100.0000%
+negative_agent_4/unsupported_evidence_cve: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/unsupported_evidence_malware: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/fake_replacement_package: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/unsupported_replacement_package: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/replace_without_suggested_package: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/replace_without_name_similarity: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/suggested_package_on_investigate: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/suggested_package_on_no_action: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/invented_version_on_replace: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/invented_version_on_no_action: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/unknown_risk_not_conditional: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/unknown_risk_disallowed_action_replace: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/unknown_risk_disallowed_action_no_action: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/ungrounded_reasoning_malware: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/ungrounded_reasoning_typosquatting: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/ungrounded_reasoning_compromised: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/contradictory_reasoning_exists: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/project_id_mismatch: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/coverage_mismatch_missing_dependency: cases=1, failed_cases=1, packages=2, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/coverage_mismatch_extraneous_package: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_5/duplicate_recommendations: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/disallowed_action_enum: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+negative_agent_4/invalid_confidence_score: cases=1, failed_cases=1, packages=1, action_accuracy=0.0000%, exact_accuracy=0.0000%
+risk_analysis/not_found_below_similarity_threshold: cases=1, failed_cases=1, packages=2, action_accuracy=50.0000%, exact_accuracy=50.0000%
+
+==========================================================================================
+PACKAGE-LEVEL ACTION FAILURES
+==========================================================================================
+CASE-001 | flask | expected=no_action | predicted=investigate | exact=False
+CASE-001 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-001 | pandas | expected=no_action | predicted=investigate | exact=False
+CASE-001 | requests | expected=no_action | predicted=investigate | exact=False
+CASE-002 | flask | expected=no_action | predicted=investigate | exact=False
+CASE-002 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-002 | pandas | expected=no_action | predicted=investigate | exact=False
+CASE-002 | requests | expected=no_action | predicted=investigate | exact=False
+CASE-003 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-003 | pandas | expected=no_action | predicted=investigate | exact=False
+CASE-003 | superfast-ai-99999 | expected=monitor | predicted=investigate | exact=False
+CASE-005 | axios | expected=no_action | predicted=investigate | exact=False
+CASE-005 | express | expected=no_action | predicted=investigate | exact=False
+CASE-006 | express | expected=no_action | predicted=replace | exact=False
+CASE-006 | super-ai-package-99999 | expected=monitor | predicted=investigate | exact=False
+CASE-007 | express | expected=no_action | predicted=investigate | exact=False
+CASE-008 | axios | expected=no_action | predicted=investigate | exact=False
+CASE-008 | express | expected=no_action | predicted=investigate | exact=False
+CASE-008 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-008 | pandas | expected=no_action | predicted=investigate | exact=False
+CASE-008 | requests | expected=no_action | predicted=investigate | exact=False
+CASE-009 | requests | expected=no_action | predicted=replace | exact=False
+CASE-016 | requests | expected=replace | predicted=investigate | exact=False
+CASE-017 | tensorflw | expected=replace | predicted=investigate | exact=False
+CASE-018 | beautifulsoup | expected=replace | predicted=investigate | exact=False
+CASE-019 | typescrip | expected=replace | predicted=investigate | exact=False
+CASE-020 | requests | expected=review | predicted=replace | exact=False
+CASE-021 | express | expected=insufficient_evidence | predicted=investigate | exact=False
+CASE-022 | unsupported-sys-pkg | expected=review | predicted=investigate | exact=False
+CASE-024 | urllib3 | expected=no_action | predicted=investigate | exact=False
+CASE-025 | flask | expected=no_action | predicted=replace | exact=False
+CASE-025 | random-ai-lib-123 | expected=monitor | predicted=investigate | exact=False
+CASE-026 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-026 | pandas | expected=review | predicted=investigate | exact=False
+CASE-027 | custom-analytics-pkg | expected=monitor | predicted=investigate | exact=False
+CASE-027 | expres | expected=replace | predicted=investigate | exact=False
+CASE-027 | react | expected=no_action | predicted=investigate | exact=False
+CASE-029 | numpy | expected=no_action | predicted=investigate | exact=False
+CASE-029 | pandas | expected=no_action | predicted=investigate | exact=False
+CASE-030 | flask | expected=no_action | predicted=investigate | exact=False
+CASE-031 | axios | expected=no_action | predicted=investigate | exact=False
+CASE-031 | express | expected=no_action | predicted=investigate | exact=False
+CASE-032 | unregistered-internal-toolkit | expected=monitor | predicted=investigate | exact=False
+CASE-037 | expres | expected=replace | predicted=investigate | exact=False
+CASE-038 | requests | expected=no_action | predicted=investigate | exact=False
+CASE-039 | superfast-ai-99999 | expected=monitor | predicted=investigate | exact=False
+CASE-043 | request | expected=None | predicted=replace | exact=False
+CASE-044 | request | expected=None | predicted=investigate | exact=False
+CASE-045 | request | expected=None | predicted=replace | exact=False
+CASE-046 | request | expected=None | predicted=replace | exact=False
+CASE-047 | request | expected=None | predicted=replace | exact=False
+CASE-048 | request | expected=None | predicted=replace | exact=False
+CASE-049 | request | expected=None | predicted=replace | exact=False
+CASE-050 | requests | expected=None | predicted=investigate | exact=False
+CASE-051 | request | expected=None | predicted=replace | exact=False
+CASE-052 | requests | expected=None | predicted=replace | exact=False
+CASE-053 | requests | expected=None | predicted=investigate | exact=False
+CASE-054 | requests | expected=None | predicted=investigate | exact=False
+CASE-055 | requests | expected=None | predicted=investigate | exact=False
+CASE-056 | request | expected=None | predicted=replace | exact=False
+CASE-057 | request | expected=None | predicted=replace | exact=False
+CASE-058 | request | expected=None | predicted=replace | exact=False
+CASE-059 | request | expected=None | predicted=replace | exact=False
+CASE-060 | request | expected=None | predicted=replace | exact=False
+CASE-061 | numpy | expected=None | predicted=investigate | exact=False
+CASE-061 | requests | expected=None | predicted=investigate | exact=False
+CASE-062 | requests | expected=None | predicted=investigate | exact=False
+CASE-063 | requests | expected=None | predicted=investigate | exact=False
+CASE-064 | request | expected=None | predicted=replace | exact=False
+CASE-065 | request | expected=None | predicted=investigate | exact=False
+CASE-004 | pandas | expected=no_action | predicted=replace | exact=False
+
+Total package-level action failures: 71
+
+==========================================================================================
+PREDICTED ACTION DISTRIBUTION
+==========================================================================================
+investigate: 55
+replace: 33
+
+==========================================================================================
+EXPECTED ACTION DISTRIBUTION
+==========================================================================================
+no_action: 31
+replace: 20
+monitor: 6
+review: 3
+investigate: 3
+insufficient_evidence: 1
+
+==========================================================================================
+CASE-004 RECOVERY
+==========================================================================================
+Status          : success
+Category        : risk_analysis
+Subcategory     : not_found_below_similarity_threshold
+Action correct  : 1/2
+Exact correct   : 1/2
+Latency         : 2.333s
+
+==========================================================================================
+RESEARCH STATUS
+==========================================================================================
+The 65-case benchmark remains the frozen external evaluation benchmark. It must not be used as Agent 4 fine-tuning data.
+CASE-004 was initially affected by a Groq rate-limit error and was subsequently executed separately and merged into the corrected baseline.
+The next research stage is failure analysis followed by creation of a separate Agent 4 fine-tuning dataset.

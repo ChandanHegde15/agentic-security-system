@@ -1,0 +1,1159 @@
+{
+  "evaluation": "baseline",
+  "model": "openai/gpt-oss-20b",
+  "provider": "Groq",
+  "dataset": {
+    "cases": 65,
+    "dataset_version": "1.1.0",
+    "dataset_sha256": "cdedc425d7d750ca9f95c189e13a596838da3072c835674882a614c019c1b8c0"
+  },
+  "execution": {
+    "cases_total": 65,
+    "cases_successful": 65,
+    "cases_with_execution_errors": 0
+  },
+  "overall_metrics": {
+    "packages_evaluated": 88,
+    "action_correct": 17,
+    "action_accuracy": 0.19318181818181818,
+    "exact_correct": 17,
+    "exact_accuracy": 0.19318181818181818,
+    "fully_action_correct_cases": 15,
+    "case_level_action_accuracy": 0.23076923076923078,
+    "fully_exact_correct_cases": 15,
+    "case_level_exact_accuracy": 0.23076923076923078
+  },
+  "latency": {
+    "mean_seconds": 11.048798461538462,
+    "minimum_seconds": 1.4268,
+    "maximum_seconds": 23.412,
+    "total_seconds": 718.1719
+  },
+  "failed_cases": [
+    {
+      "case_id": "CASE-001",
+      "category": "dependency_extraction",
+      "subcategory": "multi_dependency_verified",
+      "action_correct": 0,
+      "total_packages": 4,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-002",
+      "category": "dependency_extraction",
+      "subcategory": "version_constraints",
+      "action_correct": 0,
+      "total_packages": 4,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-003",
+      "category": "risk_analysis",
+      "subcategory": "not_found_without_similarity",
+      "action_correct": 0,
+      "total_packages": 3,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-005",
+      "category": "dependency_extraction",
+      "subcategory": "node_runtime_dependencies",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-006",
+      "category": "risk_analysis",
+      "subcategory": "node_not_found_without_similarity",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-007",
+      "category": "risk_analysis",
+      "subcategory": "node_moderate_similarity",
+      "action_correct": 1,
+      "total_packages": 2,
+      "exact_correct": 1,
+      "action_accuracy": 0.5,
+      "exact_accuracy": 0.5
+    },
+    {
+      "case_id": "CASE-008",
+      "category": "dependency_extraction",
+      "subcategory": "mixed_ecosystem",
+      "action_correct": 0,
+      "total_packages": 5,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-009",
+      "category": "registry_verification",
+      "subcategory": "single_verified_package",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-016",
+      "category": "risk_analysis",
+      "subcategory": "strong_similarity_exact_name_not_found",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-017",
+      "category": "risk_analysis",
+      "subcategory": "strong_similarity_custom_catalogue",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-018",
+      "category": "risk_analysis",
+      "subcategory": "strong_similarity_custom_catalogue",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-019",
+      "category": "risk_analysis",
+      "subcategory": "moderate_similarity_custom_catalogue",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-020",
+      "category": "registry_verification",
+      "subcategory": "pypi_registry_error",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-021",
+      "category": "registry_verification",
+      "subcategory": "npm_registry_error",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-022",
+      "category": "registry_verification",
+      "subcategory": "unsupported_ecosystem_handling",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-024",
+      "category": "dependency_extraction",
+      "subcategory": "compound_version_constraints",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-025",
+      "category": "pipeline_integration",
+      "subcategory": "mixed_status_project",
+      "action_correct": 1,
+      "total_packages": 3,
+      "exact_correct": 1,
+      "action_accuracy": 0.3333333333333333,
+      "exact_accuracy": 0.3333333333333333
+    },
+    {
+      "case_id": "CASE-026",
+      "category": "pipeline_integration",
+      "subcategory": "mixed_verified_and_registry_error",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-027",
+      "category": "pipeline_integration",
+      "subcategory": "mixed_npm_project",
+      "action_correct": 0,
+      "total_packages": 3,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-029",
+      "category": "dependency_extraction",
+      "subcategory": "duplicate_declarations",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-030",
+      "category": "dependency_extraction",
+      "subcategory": "tilde_version_constraint",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-031",
+      "category": "dependency_extraction",
+      "subcategory": "npm_version_syntax",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-032",
+      "category": "risk_analysis",
+      "subcategory": "not_found_action_monitor",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-037",
+      "category": "candidate_remediation",
+      "subcategory": "remediation_unsupported_ecosystem",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-038",
+      "category": "candidate_remediation",
+      "subcategory": "remediation_non_replacement_no_action",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-039",
+      "category": "candidate_remediation",
+      "subcategory": "remediation_non_replacement_monitor",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-043",
+      "category": "negative_agent_4",
+      "subcategory": "unsupported_evidence_cve",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-044",
+      "category": "negative_agent_4",
+      "subcategory": "unsupported_evidence_malware",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-045",
+      "category": "negative_agent_4",
+      "subcategory": "fake_replacement_package",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-046",
+      "category": "negative_agent_4",
+      "subcategory": "unsupported_replacement_package",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-047",
+      "category": "negative_agent_4",
+      "subcategory": "replace_without_suggested_package",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-048",
+      "category": "negative_agent_5",
+      "subcategory": "replace_without_name_similarity",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-049",
+      "category": "negative_agent_5",
+      "subcategory": "suggested_package_on_investigate",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-050",
+      "category": "negative_agent_5",
+      "subcategory": "suggested_package_on_no_action",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-051",
+      "category": "negative_agent_4",
+      "subcategory": "invented_version_on_replace",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-052",
+      "category": "negative_agent_4",
+      "subcategory": "invented_version_on_no_action",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-053",
+      "category": "negative_agent_5",
+      "subcategory": "unknown_risk_not_conditional",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-054",
+      "category": "negative_agent_4",
+      "subcategory": "unknown_risk_disallowed_action_replace",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-055",
+      "category": "negative_agent_5",
+      "subcategory": "unknown_risk_disallowed_action_no_action",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-056",
+      "category": "negative_agent_5",
+      "subcategory": "ungrounded_reasoning_malware",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-057",
+      "category": "negative_agent_5",
+      "subcategory": "ungrounded_reasoning_typosquatting",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-058",
+      "category": "negative_agent_5",
+      "subcategory": "ungrounded_reasoning_compromised",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-059",
+      "category": "negative_agent_5",
+      "subcategory": "contradictory_reasoning_exists",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-060",
+      "category": "negative_agent_4",
+      "subcategory": "project_id_mismatch",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-061",
+      "category": "negative_agent_5",
+      "subcategory": "coverage_mismatch_missing_dependency",
+      "action_correct": 0,
+      "total_packages": 2,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-062",
+      "category": "negative_agent_4",
+      "subcategory": "coverage_mismatch_extraneous_package",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-063",
+      "category": "negative_agent_5",
+      "subcategory": "duplicate_recommendations",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-064",
+      "category": "negative_agent_4",
+      "subcategory": "disallowed_action_enum",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-065",
+      "category": "negative_agent_4",
+      "subcategory": "invalid_confidence_score",
+      "action_correct": 0,
+      "total_packages": 1,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    {
+      "case_id": "CASE-004",
+      "category": "risk_analysis",
+      "subcategory": "not_found_below_similarity_threshold",
+      "action_correct": 1,
+      "total_packages": 2,
+      "exact_correct": 1,
+      "action_accuracy": 0.5,
+      "exact_accuracy": 0.5
+    }
+  ],
+  "failed_package_count": 71,
+  "category_analysis": {
+    "dependency_extraction": {
+      "cases": 9,
+      "failed_cases": 8,
+      "packages": 21,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis": {
+      "cases": 16,
+      "failed_cases": 9,
+      "packages": 21,
+      "action_correct": 9,
+      "exact_correct": 9,
+      "action_accuracy": 0.42857142857142855,
+      "exact_accuracy": 0.42857142857142855
+    },
+    "registry_verification": {
+      "cases": 4,
+      "failed_cases": 4,
+      "packages": 4,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "pipeline_integration": {
+      "cases": 3,
+      "failed_cases": 3,
+      "packages": 8,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 0.125,
+      "exact_accuracy": 0.125
+    },
+    "candidate_remediation": {
+      "cases": 10,
+      "failed_cases": 3,
+      "packages": 10,
+      "action_correct": 7,
+      "exact_correct": 7,
+      "action_accuracy": 0.7,
+      "exact_accuracy": 0.7
+    },
+    "negative_agent_4": {
+      "cases": 12,
+      "failed_cases": 12,
+      "packages": 12,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5": {
+      "cases": 11,
+      "failed_cases": 11,
+      "packages": 12,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    }
+  },
+  "subcategory_analysis": {
+    "dependency_extraction/multi_dependency_verified": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 4,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "dependency_extraction/version_constraints": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 4,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/not_found_without_similarity": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 3,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "dependency_extraction/node_runtime_dependencies": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/node_not_found_without_similarity": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/node_moderate_similarity": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 0.5,
+      "exact_accuracy": 0.5
+    },
+    "dependency_extraction/mixed_ecosystem": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 5,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "registry_verification/single_verified_package": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/pypi_moderate_similarity": {
+      "cases": 4,
+      "failed_cases": 0,
+      "packages": 4,
+      "action_correct": 4,
+      "exact_correct": 4,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "risk_analysis/npm_moderate_similarity": {
+      "cases": 2,
+      "failed_cases": 0,
+      "packages": 2,
+      "action_correct": 2,
+      "exact_correct": 2,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "risk_analysis/strong_similarity_exact_name_not_found": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/strong_similarity_custom_catalogue": {
+      "cases": 2,
+      "failed_cases": 2,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/moderate_similarity_custom_catalogue": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "registry_verification/pypi_registry_error": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "registry_verification/npm_registry_error": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "registry_verification/unsupported_ecosystem_handling": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/not_found_action_investigate": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "dependency_extraction/compound_version_constraints": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "pipeline_integration/mixed_status_project": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 3,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 0.3333333333333333,
+      "exact_accuracy": 0.3333333333333333
+    },
+    "pipeline_integration/mixed_verified_and_registry_error": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "pipeline_integration/mixed_npm_project": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 3,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "dependency_extraction/empty_manifest": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 0,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0,
+      "exact_accuracy": 0
+    },
+    "dependency_extraction/duplicate_declarations": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "dependency_extraction/tilde_version_constraint": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "dependency_extraction/npm_version_syntax": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/not_found_action_monitor": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "candidate_remediation/remediation_success": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_test_failure": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_no_tests": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_install_failure": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_unsupported_ecosystem": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "candidate_remediation/remediation_non_replacement_no_action": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "candidate_remediation/remediation_non_replacement_monitor": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "candidate_remediation/remediation_non_replacement_investigate": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_branch_collision": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "candidate_remediation/remediation_unexpected_modifications": {
+      "cases": 1,
+      "failed_cases": 0,
+      "packages": 1,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 1.0,
+      "exact_accuracy": 1.0
+    },
+    "negative_agent_4/unsupported_evidence_cve": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/unsupported_evidence_malware": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/fake_replacement_package": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/unsupported_replacement_package": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/replace_without_suggested_package": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/replace_without_name_similarity": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/suggested_package_on_investigate": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/suggested_package_on_no_action": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/invented_version_on_replace": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/invented_version_on_no_action": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/unknown_risk_not_conditional": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/unknown_risk_disallowed_action_replace": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/unknown_risk_disallowed_action_no_action": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/ungrounded_reasoning_malware": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/ungrounded_reasoning_typosquatting": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/ungrounded_reasoning_compromised": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/contradictory_reasoning_exists": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/project_id_mismatch": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/coverage_mismatch_missing_dependency": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/coverage_mismatch_extraneous_package": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_5/duplicate_recommendations": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/disallowed_action_enum": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "negative_agent_4/invalid_confidence_score": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 1,
+      "action_correct": 0,
+      "exact_correct": 0,
+      "action_accuracy": 0.0,
+      "exact_accuracy": 0.0
+    },
+    "risk_analysis/not_found_below_similarity_threshold": {
+      "cases": 1,
+      "failed_cases": 1,
+      "packages": 2,
+      "action_correct": 1,
+      "exact_correct": 1,
+      "action_accuracy": 0.5,
+      "exact_accuracy": 0.5
+    }
+  },
+  "predicted_action_distribution": {
+    "investigate": 55,
+    "replace": 33
+  },
+  "expected_action_distribution": {
+    "no_action": 31,
+    "monitor": 6,
+    "replace": 20,
+    "review": 3,
+    "insufficient_evidence": 1,
+    "investigate": 3
+  },
+  "case_004_recovery": {
+    "included": true,
+    "status": "success"
+  },
+  "research_note": "The 65-case evaluation benchmark is treated as frozen and unseen for subsequent Agent 4 fine-tuning. CASE-004 was initially affected by a Groq rate-limit execution error and was subsequently evaluated separately and merged into the corrected baseline results."
+}

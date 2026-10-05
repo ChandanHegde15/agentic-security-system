@@ -1,0 +1,97 @@
+{
+  "case_id": "CASE-004",
+  "status": "success",
+  "model": "openai/gpt-oss-20b",
+  "latency_seconds": 2.333,
+  "predicted_recommendations": [
+    {
+      "package_name": "pandas",
+      "action": "replace",
+      "suggested_package": "pandas",
+      "suggested_version": null,
+      "confidence": 0.8,
+      "reasoning": "Recommended action: replace. Agent 3 supplied pandas as the reference-package candidate. Evidence: Package was not found in the official pypi registry. Package name has high similarity to a reference package.",
+      "evidence_referenced": [
+        "not_found",
+        "name_similarity"
+      ],
+      "conditional": false
+    },
+    {
+      "package_name": "reqeusts",
+      "action": "investigate",
+      "suggested_package": null,
+      "suggested_version": null,
+      "confidence": 0.7,
+      "reasoning": "Recommended action: investigate. Evidence: Package was not found in the official pypi registry.",
+      "evidence_referenced": [
+        "not_found"
+      ],
+      "conditional": false
+    }
+  ],
+  "expected_recommendations": [
+    {
+      "package_name": "pandas",
+      "action": "no_action",
+      "suggested_package": null,
+      "suggested_version": null,
+      "confidence": 0.95,
+      "reasoning": "Recommended action: no_action. No Agent 3 signals were referenced for this recommendation.",
+      "evidence_referenced": [],
+      "conditional": false
+    },
+    {
+      "package_name": "reqeusts",
+      "action": "investigate",
+      "suggested_package": null,
+      "suggested_version": null,
+      "confidence": 0.85,
+      "reasoning": "Recommended action: investigate. Evidence: Package was not found in the official pypi registry.",
+      "evidence_referenced": [
+        "not_found"
+      ],
+      "conditional": false
+    }
+  ],
+  "package_comparisons": [
+    {
+      "package_name": "pandas",
+      "expected_action": "no_action",
+      "predicted_action": "replace",
+      "action_match": false,
+      "expected_suggested_package": null,
+      "predicted_suggested_package": "pandas",
+      "suggested_package_match": false,
+      "expected_evidence": [],
+      "predicted_evidence": [
+        "name_similarity",
+        "not_found"
+      ],
+      "evidence_match": false,
+      "exact_match": false
+    },
+    {
+      "package_name": "reqeusts",
+      "expected_action": "investigate",
+      "predicted_action": "investigate",
+      "action_match": true,
+      "expected_suggested_package": null,
+      "predicted_suggested_package": null,
+      "suggested_package_match": true,
+      "expected_evidence": [
+        "not_found"
+      ],
+      "predicted_evidence": [
+        "not_found"
+      ],
+      "evidence_match": true,
+      "exact_match": true
+    }
+  ],
+  "action_correct": 1,
+  "exact_correct": 1,
+  "total_packages": 2,
+  "action_accuracy": 0.5,
+  "exact_accuracy": 0.5
+}

@@ -1,28 +1,53 @@
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
+*.class
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# Testing/cache
+# Test/build artifacts
 .pytest_cache/
+.pytest_tmp/
+.pytest-tmp/
 .coverage
 htmlcov/
+build/
+dist/
+*.egg-info/
 
-# IDE
+# IDE / OS
 .vscode/
 .idea/
-
-# OS files
 .DS_Store
 Thumbs.db
 
-# Environment variables / secrets
+# Secrets
 .env
+.env.*
+!.env.example
+
+# Model checkpoints, adapters, tokenizer copies and training state
+models/**
+!models/**/README.md
+!models/**/training_metrics.json
+!models/**/internal_test_metrics.json
+!models/**/external_benchmark_metrics.json
+
+# Datasets and generated prediction outputs (keep README/manifest only)
+research/datasets/**
+!research/datasets/**/README.md
+!research/datasets/**/manifest.json
+research-evaluation-dataset-phase2/baseline_results/*.json
+research-evaluation-dataset-phase2/baseline_results/*.csv
+research-evaluation-dataset-phase2/baseline_results/*.txt
+
+# Preserved original ignore rules
 # Python cache
-__pycache__/
-*.py[cod]
-*.class
+# Testing/cache
+# IDE
+# OS files
+# Environment variables / secrets
+# Python cache
